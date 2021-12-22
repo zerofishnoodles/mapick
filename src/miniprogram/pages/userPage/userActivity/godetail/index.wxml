@@ -1,0 +1,14 @@
+<scroll-view scroll-y="true" class="container" enable-flex="true">
+  <view class="actionContent">
+  <view class="section">活动主题：{{detailArticle.title}}</view>
+    <view class="section">活动内容：{{detailArticle.content}}</view>
+    <view class="section">活动地点：{{detailArticle.locationName}}</view>
+    <view class="section">开始时间：{{detailArticle.startTime}} </view>
+    <view class="section">结束时间：{{detailArticle.endTime}}</view>
+    <view class="section">报名人数：{{detailArticle.number}}</view>
+  </view>
+  <view class="register">
+    <button wx:if='{{isRegister}}' type="primary" disabled="true">已报名</button>
+    <button wx:if="{{!isRegister}}" type="primary" bindtap="onRegister">报名</button>
+  </view>
+</scroll-view>

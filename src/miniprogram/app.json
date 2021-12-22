@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/mapPage/index",
+    "pages/actionPage/index",
+    "pages/actionPage/godetail/index",
+    "pages/userPage/index",
+    "pages/momentPage/index",
+    "pages/userPage/userActivity/index",
+    "pages/uploadActivity/index",
+    "pages/test/index",
+    "pages/imageUpload/imageUpload",
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/userPage/userMoment/index",
+    "pages/mapPage/ActivityByLoc/index",
+    "pages/mapPage/ActivityByLoc/godetail/index",
+    "pages/mapPage/momentByLoc/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于展示附近动态"
+    }
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/mapPage/index",
+        "iconPath": "images/mapPage.png",
+        "selectedIconPath": "images/mapPageSelected.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/momentPage/index",
+        "iconPath": "images/momentPage.png",
+        "selectedIconPath": "images/momentPageSelected.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/actionPage/index",
+        "iconPath": "images/actionPage.png",
+        "selectedIconPath": "images/actionPageSelected.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/userPage/index",
+        "iconPath": "images/userPage.png",
+        "selectedIconPath": "images/userPageSelected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "mapick",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

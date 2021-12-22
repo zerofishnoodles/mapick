@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="userinfo" wx:if="{{hasUserInfo}}">
+    <image style="background-image: url({{userInfo.avatarUrl}})" class="userinfo-avatar"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="userinfo" wx:if="{{!hasUserInfo}}">
+    <view class="userinfo-avatar"></view>
+    <view class="login">
+      <button class="login_text" bindtap="getUserProfile">登录</button>
+    </view>
+  </view>
+  <view class="my" bindtap="getUserMoment">
+    <text class="text">我的动态</text>
+  </view>
+  <view class="my" bindtap="getUserActivity">
+    <text class="text">我的活动</text>
+  </view>
+
+</view>

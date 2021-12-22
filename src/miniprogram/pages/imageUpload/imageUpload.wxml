@@ -1,0 +1,2 @@
+<!--pages/imageUpload/imageUpload.wxml-->
+<button bindtap="chooseImg">选择图片</button>

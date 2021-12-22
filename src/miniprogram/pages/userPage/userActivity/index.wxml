@@ -1,0 +1,12 @@
+<scroll-view scroll-y="true" class="container" enable-flex="true">
+	<view wx:for="{{article}}" wx:key="key" data-index="{{index}}"class="moment-item-container" bindtap="godetail">
+		<view class="question">
+			<view class="moment-text">{{item.title}}</view>
+		</view>
+		<view class="answer-body">
+			<view>
+				<text class="answer-txt">{{item.startTime}}----{{item.endTime}}</text>
+			</view>
+		</view>
+	</view>
+</scroll-view>

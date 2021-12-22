@@ -1,0 +1,56 @@
+<view class="page-body" style="width: 468rpx; height: 300rpx; display: block; box-sizing: content-box">
+  <view class="page-section">
+    <view class="container__title">开始时间</view>
+    <picker mode="date" value="{{startDate}}" start="2020-09-01" end="2030-09-01" bindchange="bindStartDateChange">
+      <view class="picker">
+        {{startDate}}
+      </view>
+    </picker>
+    <picker mode="time" value="{{startTime}}" start="09:01" end="21:01" bindchange="bindStartTimeChange">
+      <view class="picker">
+        {{startTime}}
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="page-section">
+    <view class="container__title">结束时间</view>
+    <picker mode="date" value="{{endDate}}" start="2020-09-01" end="2030-09-01" bindchange="bindEndDateChange">
+      <view class="picker">
+        {{endDate}}
+      </view>
+    </picker>
+    <picker mode="time" value="{{endTime}}" start="09:01" end="21:01" bindchange="bindEndTimeChange">
+      <view class="picker">
+        {{endTime}}
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="page-section">
+    <view class="weui-cells__title">活动主题：</view>
+    <view class="weui-cells weui-cells_after-title" style="width: 434rpx; height: 42rpx; display: block; box-sizing: border-box">
+      <view class="weui-cell weui-cell_input">
+        <input style="width: 428rpx; height: 44rpx; display: block; box-sizing: border-box"  class="weui-input" maxlength="30" bindinput="bindGetTitle" placeholder="请输入活动主题" />
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section" style="height: 400rpx; width: 600rpx; display: flex; box-sizing: border-box">
+    <view class="weui-cells__title"   style="width: 140rpx; height: 42rpx; display: block; box-sizing: border-box">活动内容: </view>
+    <view class="weui-cells weui-cells_after-title" style="width: 438rpx; height: 300rpx; display: block; box-sizing: border-box">
+      <view class="weui-cell weui-cell_input" style="width: 446rpx; margin-right: 5rpx; height: 300rpx; display: block; box-sizing: border-box" >
+        <textarea style="position: relative; left: 2rpx; top: -2rpx; width: 443rpx; height: 300rpx; display: block; box-sizing: border-box"  class="weui-input" bindinput="bindGetContent" placeholder="请输入活动内容" type="textarea"></textarea>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <text class="location">活动地点</text>
+    <view bindtap="getLocation" style="width: 306rpx; height: 42rpx; display: block; box-sizing: border-box">{{locationName}}</view>
+  </view>
+  <view class="container">
+    <button type="primary" bindtap="uploadActivity" style="position: relative; left: 110rpx; top: 170rpx; width: 298rpx; height: 92rpx; display: block; box-sizing: border-box; border-radius:5px;">发布</button>
+  </view>
+</view>

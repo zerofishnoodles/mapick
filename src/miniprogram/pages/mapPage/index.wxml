@@ -1,0 +1,19 @@
+<!--pages/mapPage/index.wxml-->
+<!-- <map style="position: relative; left: 0rpx; top: -42rpx; width: 748rpx; height: 1290rpx; display: block; box-sizing: border-box"
+latitude="{{latitude}}"
+longitude="{{longitude}}"
+>
+</map> -->
+
+<map 
+  id="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}"
+  markers="{{markers}}"
+  bindregionchange="onChangeRegion" 
+  show-location 
+  style="width: 100%; height: {{view.Height}}px;"
+  bindpoitap="onTapPoi"
+  ></map>
+

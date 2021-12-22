@@ -1,0 +1,20 @@
+<scroll-view scroll-y="true" class="container" enable-flex="true">
+	<view wx:for="{{article}}" wx:key="key" class="moment-item-container">
+		<view class="question">
+			<view class="moment-text">{{item.content}}</view>
+			<view wx:if="{{item.image}}">
+				<image mode="heightFix" src="{{item.image}}"></image>
+			</view>
+		</view>
+		<view class="answer-body">
+			<view>
+				<text class="answer-txt">{{item.time}}</text>
+			</view>
+			<view class="answer-actions">
+
+				<view>{{item.like}} 点赞 </view>
+
+			</view>
+		</view>
+	</view>
+</scroll-view>

@@ -1,0 +1,1 @@
+"D:\Programs\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-3g6eamy455076794 --n quickstartFunctions --r --project "D:\Documents\course\junior\SoftwareEngineer\mapick" --report

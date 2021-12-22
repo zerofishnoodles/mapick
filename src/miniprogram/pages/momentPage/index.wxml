@@ -1,0 +1,23 @@
+<scroll-view scroll-y="true" class="container" enable-flex="true">
+	<navigator class="navigator-item" url="/pages/launchmoment/index">
+		<cover-image src="/images/+.png" style="position: fixed; left: 636rpx; top: 10rpx"></cover-image>
+	</navigator>
+	<view wx:for="{{article}}" wx:key="key" class="moment-item-container">
+		<view class="question">
+			<view class="moment-text">{{item.content}}</view>
+			<view wx:if="{{item.image}}">
+				<image mode="heightFix" src="{{item.image}}"></image>
+			</view>
+		</view>
+		<view class="answer-body">
+			<view>
+				<text class="answer-txt">{{item.time}}</text>
+			</view>
+			<view class="answer-actions">
+
+				<view>{{item.like}} 点赞 </view>
+
+			</view>
+		</view>
+	</view>
+</scroll-view>

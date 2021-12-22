@@ -1,0 +1,22 @@
+.actionContent{
+  width: 95%;
+}
+.section{
+  margin-top: 12rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  height: 50rpx;
+}
+
+.container{
+  background-color: #F0F4F3;
+  height: 2000rpx;
+  padding-top: 50rpx;
+}
+
+.register{
+  margin-top: 100rpx;
+}

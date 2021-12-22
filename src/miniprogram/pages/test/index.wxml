@@ -1,0 +1,24 @@
+<!--pages/test/index.wxml-->
+<view>
+  <view class="top_tip">test</view>
+  <view class="box_text" wx:if="{{!record}}">no record</view>
+  <view  wx:if="{{record}}" class="code_box">
+    <view class="code_box_title">1</view>
+    <view class="code_box_record">
+      <view class="code_box_record_title">2</view>
+      <view class="code_box_record_title">3</view>
+      <view class="code_box_record_title">4</view>
+    </view>
+    <view class="line"></view>
+    <view class="code_box_record" wx:for="{{record}}" wx:key="_id">
+      <view class="code_box_record_detail">{{item.title}}</view>
+      <view class="code_box_record_detail">{{item.content}}</view>
+      <view class="code_box_record_detail">{{item.location.coordinates}}</view>
+      <view class="code_box_record_detail">{{item.time}}</view>
+    </view>
+  </view>
+  <button bindtap="chooseImg">选择图片</button>
+  <image src="{{imgURL}}"></image>
+  <view class="button" bindtap="test5">查询记录</view>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+</view>

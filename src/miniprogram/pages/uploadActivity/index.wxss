@@ -1,0 +1,16 @@
+.time_container{
+  display: flex;
+}
+
+ .page-body{
+   padding: 0 20rpx;
+ }
+
+ .page-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80vw;
+   height: 100rpx;
+   flex-wrap: nowrap;
+ }
